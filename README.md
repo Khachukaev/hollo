@@ -1,2 +1,0 @@
-# hollo
-fuck zhrachka
