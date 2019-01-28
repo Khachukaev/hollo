@@ -61,9 +61,18 @@ let displayNum = function () {
      if (isNaN(result)) {
          result = 'Daymn man, u broke dat shiet';
      } else {
-         result = 'It is not allowed to divide by zero, dumb ass';
+         result = 'It is not allowed to divide by zero, dumb ass nigga';
      }
  }
+    
+let maxNum = result.toString().length;
+    
+    if (maxNum > max) {
+        $('.display').css('font-size', '1.5em');
+        console.log(maxNum);
+    } else {
+        $('.display').css('font-size', '52px');
+    }
     
  display.innerHTML = result;
  equals.setAttribute('value', result);
@@ -78,6 +87,7 @@ let clearAll = function() {
     num2 = '';
     display.innerHTML = '0';
     equals.setAttribute('value', result);
+    $('.display').css('font-size', '52px');
 };
 
 for (let i = 0; i < nums.length; i++) {
