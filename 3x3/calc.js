@@ -54,16 +54,15 @@ let displayNum = function () {
             break;
         default:
             result = num2;
-            
+            break;
     }
+    
  if(!isFinite(result)) {
      if (isNaN(result)) {
-         result = 'Daymn man, u broke dat shiet'
+         result = 'Daymn man, u broke dat shiet';
      } else {
-         result = 'It is not allowed to divide by zero, dumb ass'
+         result = 'It is not allowed to divide by zero, dumb ass';
      }
-
-     
  }
     
  display.innerHTML = result;
@@ -92,6 +91,4 @@ for (let i = 0; i < operator.length; i++) {
 equals.onclick = displayNum;
 
 el('#clear').onclick = clearAll;
-
-
 
