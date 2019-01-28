@@ -5,7 +5,6 @@ let operator = '';
 let total = '';
 $(document).ready(function() {
     $('button').on('click', function(e) {
-        let dot = midnum.includes('.');
         let btn = e.target.value;
         let display = $('.display');
         if (btn >= '0' && btn <= '9' && midnum.length <=8) {
@@ -34,7 +33,10 @@ $(document).ready(function() {
             break;
         }
         } else if (btn === 'clear'){
-            display.text() = '0'
+            num1 = '';
+            midnum = '';
+            operator = '';
+            display.text('0');
         }
         else {
             num1 = midnum;

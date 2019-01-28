@@ -10,40 +10,40 @@
 <body>
     <div class="wrapper">
         <div class="content">
-            <div class="display">0</div>
+            <div id="display" class="display">0</div>
             <div class="buttons">
                 <div class="row">
-                    <button class="key" value="clear">C</button>
+                    <button id="clear" class="key" value="clear">C</button>
                     <button class="key" value="plus-minus"><sup>+</sup>/<sub>−</sub></button>
-                    <button class="key" value="%">%</button>
-                    <button class="key orange" value="/">÷</button>
+                    <button class="key ops" value="%">%</button>
+                    <button class="key orange ops" value="/">/</button>
                 </div>
                 <div class="row">
-                    <button class="key" value="7">7</button>
-                    <button class="key" value="8">8</button>
-                    <button class="key" value="9">9</button>
-                    <button class="key orange" value="*">x</button>
+                    <button class="key num" value="7">7</button>
+                    <button class="key num" value="8">8</button>
+                    <button class="key num" value="9">9</button>
+                    <button class="key orange ops" value="*">x</button>
                 </div>
                 <div class="row">
-                    <button class="key" value="4">4</button>
-                    <button class="key" value="5">5</button>
-                    <button class="key" value="6">6</button>
-                    <button class="key orange" value="+">+</button>
+                    <button class="key num" value="4">4</button>
+                    <button class="key num" value="5">5</button>
+                    <button class="key num" value="6">6</button>
+                    <button class="key orange ops" value="+">+</button>
                 </div>
                 <div class="row">
-                    <button class="key" value="1">1</button>
-                    <button class="key" value="2">2</button>
-                    <button class="key" value="3">3</button>
-                    <button class="key orange" value="-">-</button>
+                    <button class="key num" value="1">1</button>
+                    <button class="key num" value="2">2</button>
+                    <button class="key num" value="3">3</button>
+                    <button class="key orange ops" value="-">-</button>
                 </div>
                 <div class="row">
-                    <button class="key zero" value="0">0</button>
-                    <button class="key" value=".">.</button>
-                    <button class="key orange" value="equals">=</button>
+                    <button class="key zero num" value="0">0</button>
+                    <button class="key num" value=".">.</button>
+                    <button id="equals" class="key orange" value="equals">=</button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script src="calc.js"></script>
 </body>
 </html>
